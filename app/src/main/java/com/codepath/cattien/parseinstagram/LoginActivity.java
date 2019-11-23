@@ -49,12 +49,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void done(ParseUser user, ParseException e) {
                 if (e != null) {
-                    // TODO: better error handling
                     Log.e(TAG, "Issue with login");
                     e.printStackTrace();
                     return;
                 }
-                // TODO: navigate to new activity if the user has signed properly
                 goMainActivity();
             }
         });
